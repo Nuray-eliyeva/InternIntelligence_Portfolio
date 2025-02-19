@@ -2,7 +2,11 @@ import React from 'react'
 
 function Cv() {
   return (
-    <div>Cv</div>
+    <>
+     <div className="cv-container">
+     <div className="cv-img"> <img src="/Images/cv.png" alt="" /></div>
+     </div>
+    </>
   )
 }
 

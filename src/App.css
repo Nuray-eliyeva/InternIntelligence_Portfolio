@@ -87,6 +87,9 @@
    color: linear-gradient(to right, #7BC6CC, #BE93C5);
    font-weight: bold;
 }
+.nuray{
+  font-size: 25px;
+}
 .back-gradient{
     /* border: 1px solid black; */
     width: 90%;
@@ -280,7 +283,7 @@ justify-content: space-between;
   display: flex;
 }
 .skills h4{
-  width: 120px;
+  width: 127px;
 color: #a37da9;
 font-weight: bold;
 }
@@ -325,6 +328,15 @@ font-weight: bold;
 .cpp {
   animation: increaseWidth80 2s 2.2s forwards;
 }
+.git{
+  animation: increaseWidth70 2s 2.4s forwards;
+}
+.vs{
+  animation: increaseWidth80 2s 2.5s forwards;
+}
+.figma{
+  animation: increaseWidth60 2s 2.7s forwards;
+}
 /* Animasiya qaydası */
 @keyframes increaseWidth100 {
   from {
@@ -366,8 +378,48 @@ font-weight: bold;
     width: 80%;
   }
 }
-
-
+@keyframes increaseWidth60 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+}
+/*-----------------CERTIFICATE-PAGE----------*/
+.sertificate-section{
+  background: #be93c5e9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7bc7cc7c, #be93c58c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7bc7cc94, #be93c59b);
+    padding: 70px 0px 80px;
+}
+.sertificate:hover{
+  scale: 1.7;
+  transition: 1s all;
+  transform: translateY(-10px);
+}
+.cont:first-child:hover{
+  scale: 1.2;
+  transition: 1s all;
+}
+/*----------------------CV------------------*/
+.cv-container{
+width: 100%;
+display:flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+}
+.cv-img{
+  width:60%;
+  
+}
+.cv-img img{
+  width: 100%;
+  border: 1px solid lightgray;
+}
 
 
 
@@ -391,7 +443,39 @@ font-weight: bold;
 .footer li{
     list-style-type: none;
 }
+.fot-item{
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .links-foot{
    text-decoration: none;
    color: white;
+   font-size: 20px;
+}
+.links-foot:hover{
+ font-weight: bold;
+}
+.icon{
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+/* Telefon üçün (max 600px) */
+@media (max-width: 600px) {
+  .skil-cont{
+     padding: 10px;
+  }
+  .sertificate{
+    width:50px;
+   }
+  
+}
+
+/* Planşet üçün (601px - 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .skil-cont {
+    padding: 10px;
+ }
+ 
 }
